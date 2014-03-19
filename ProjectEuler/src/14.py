@@ -9,10 +9,13 @@ def numof_collatz(num):
     
     return q
 
-largest = 0
+numOfSeq = 0
+number = 0
 for i in range(13, 1000000):
     temp = numof_collatz(i)
-    if temp > largest:
-        largest = temp
+    if temp > numOfSeq:
+        numOfSeq = temp
+        number = i
         
-print largest
+print number
+        
